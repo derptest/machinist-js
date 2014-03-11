@@ -1,7 +1,8 @@
 var
     should = require("should"),
     machinist = require("../lib"),
-    store = require("../lib/store");
+    opts = {host: 'localhost:5984'},
+    store = require("./utils/mock_store")(opts);
 
 describe("Machinist API", function(){
     var derpBP;
@@ -33,14 +34,14 @@ describe("Machinist API", function(){
 
     it("should be able to register data stores", function(done){
         machinist.addStore("mongo", store);
-        // machinist.stores.mongo.should.be.exactly(store);
+        machinist.stores.mongo.should.be.exactly(store);
 
         return done();
     });
 
     it.skip("if you register a data store without a name, name should revert to 'default'", function(done){
         machinist.addStore(store);
-        // machinist.stores.default.should.be.exactly(store);
+        machinist.stores.default.should.be.exactly(store);
         return done();
     });
 
