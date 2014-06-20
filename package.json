@@ -1,0 +1,49 @@
+{
+  "name": "machinist-js",
+  "description": "Implementation of machinist for Node and JavaScript projects",
+  "keywords": [
+    "testing",
+    "node",
+    "machinist",
+    "fixtures",
+    "data",
+    "tests"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://github.com/derptest/machinist-js",
+  "author": "Adam Englander <adam.englander@coupla.com> (http://adamknowsstuff.com)",
+  "contributors": [
+    "Adam Englander <adam.englander@coupla.com> (http://adamknowsstuff.com)",
+    "Warner Onstine <warner@warneronstine.com> (http://www.warneronstine.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derptest/machinist-js.git"
+  },
+  "bugs": {
+    "url": "http://github.com/derptest/machinist-js/issues"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/",
+  "engines": {
+    "node": "0.6 || 0.8 || 0.10 || 0.11"
+  },
+  "dependencies" : {
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "mocha": "*",
+    "should": "*",
+    "blanket": "*"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/derptest/machinist-js/LICENSE"
+    }
+  ],
+  "optionalDependencies": {}
+}
